@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+<h1 id="titlee">MARVS - Graphing Calculator</h1>
+</header>
+<div class="main"><nav id="menu">
+    <ul>
+        <li onclick="show('trigolist')">Trignometry</li>
+        <ul id="trigolist">
+            <li onclick="trignometric('sin(x)')">sin(x)</li>
+            <li onclick="trignometric('cos(x)')">cos(x)</li>
+            <li onclick="trignometric('tan(x)')">tan(x)</li>
+            <li onclick="trignometric('sin(x)')">cosec(x)</li>
+            <li onclick="trignometric('sin(x)')">sec(x)</li>
+            <li onclick="trignometric('sin(x)')">cot(x)</li>
+        </ul>
+ 
+        <li onclick="show('linearlist')">Linear</li>
+            <ul id="linearlist" >
+                <li onclick="linear()">y=mx+c</li>
+                <input type="range" name="mr" id="m" min="-10" max="10" step="0.1" onchange="linear()">
+                <input type="range" name="cr" id="c" min="0" max="10">
+            </ul>
+        <li onclick="show('quadraticlist')">Quadratic</li>
+            <ul id="quadraticlist">
+                <li onclick="quadratic()">ax<sup>2</sup>+bx+c</li>
+            </ul>
+    </ul>
+</nav>
+<div id="graph"></div>
+</div>
+
+</body>
+</html>
