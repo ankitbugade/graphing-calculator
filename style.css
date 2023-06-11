@@ -1,9 +1,33 @@
-body{background-color: #1c011e}
-#titlee{font-size: xxx-large;color: rgb(243, 239, 247);background-image: linear-gradient(to right,rgb(49, 3, 71),rgb(130, 75, 155));width: auto;border-radius: 25px;box-sizing: border-box;margin: 0%;padding: 2%;display:block;}
-#menu ul li{list-style: none;display:block;color: bisque;}
-#menu ul li:hover{cursor: pointer;background-color: rgb(46, 22, 68);}
-#menu{display: flex;position:relative;flex-direction: column;background-color: rgb(18, 2, 24);width:fit-content;height:auto;}
+body{background-color: white;
+     }
+#titlee{
+    background-color: #222;
+    color: #5FF;
+    padding: 1rem ;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+#menu ul li{list-style: none;display:block;color:#5FF;}
+#menu ul li:hover{cursor: pointer;background-color: #bcf2fa;}
+#menu{display: flex;position:relative;flex-direction: column;background-color: #222;width:fit-content;height:auto;border-radius: 0.5rem;}
 .main{display: flex;height: 100%;min-height: 80%;flex-direction: column;}
 #trigolist,#linearlist,#quadraticlist{display: none;}
 .show{display: block;}
 #graph{height: 50%;}
+
