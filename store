@@ -1,0 +1,14 @@
+
+header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;} 
+
+.image{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 7px;
+    border-radius: 50%;
+    border: #5FF;
+    box-shadow: 0 0 100px #5ff;
+    border-style: solid;
+}
