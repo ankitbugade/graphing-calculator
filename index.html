@@ -6,38 +6,52 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="code.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
-<img class="image" src="android-chrome-512x512.png">
-<h1 id="titlee">MARVS - Graphing Calculator</h1>
+        <img class="image" src="android-chrome-512x512.png">
+        <h1 id="titlee">MARVS - Graphing Calculator</h1>
 </header>
-<div class="main"><nav id="menu">
-    <ul>
-        <li onclick="show('trigolist')">Trignometry</li>
-        <ul id="trigolist">
-            <li onclick="trignometric('sin(x)')">sin(x)</li>
-            <li onclick="trignometric('cos(x)')">cos(x)</li>
-            <li onclick="trignometric('tan(x)')">tan(x)</li>
-            <li onclick="trignometric('sin(x)')">cosec(x)</li>
-            <li onclick="trignometric('sin(x)')">sec(x)</li>
-            <li onclick="trignometric('sin(x)')">cot(x)</li>
-        </ul>
- 
-        <li onclick="show('linearlist')">Linear</li>
-            <ul id="linearlist" >
-                <li onclick="linear()">y=mx+c</li>
-                <input type="range" name="mr" id="m" min="-10" max="10" step="0.1" onchange="linear()">
-                <input type="range" name="cr" id="c" min="0" max="10">
-            </ul>
-        <li onclick="show('quadraticlist')">Quadratic</li>
-            <ul id="quadraticlist">
-                <li onclick="quadratic()">ax<sup>2</sup>+bx+c</li>
-            </ul>
-    </ul>
-</nav>
-<div id="graph"></div>
+<div id="main">
+    <div>
+    <b class="trignometry" onclick="show('trigofun')"   >Trignometry</b>
+    <div>
+    <div class="trigolist" style="display: none;" id="trigofun" >
+        <a href="#" class="titem" onclick="trignometric('sin(x)')">sin(x)</a>
+        <a href="#" class="titem" onclick="trignometric('cos(x)')">cos(x)</a>
+        <a href="#" class="titem" onclick="trignometric('tan(x)')">tan(x)</a>
+        <a href="#" class="titem" onclick="inverse('sin(x)')">cosec(x)</a>
+        <a href="#" class="titem" onclick="inverse('cos(x)')">sec(x)</a>
+        <a href="#" class="titem" onclick="inverse('tan(x)')">cot(x)</a>
+    </div>
+    </div>
+    </div>
+
+    <div>
+    <b class="linear" onclick="show('linearfun')">Linear</b>
+    <div class="linearlist" style="display: none;" id="linearfun">
+        <b onclick="linear()">y=mx+c</b>
+        m: <span id="MrangeValue">0</span>
+        <input type="range" name="mr" id="m" min="-10" max="10" step="0.1" onchange="linear()" class="range" onchange="rv('MrangeValue','m')">
+        c: <span id="CcrangeValue">0</span>
+        <input type="range" name="cr" id="cc" min="-10" max="10" class="range" onchange="linear()" onchange="rv('CcrangeValue','cc')">
+    </div>
+    </div>
+    <div>
+    <b class="Quadratic" onclick="show('quadfun')" >Quadratic</b>
+    <div class="quadraticlist" style="display: none;" id="quadfun">
+        <a href="#" class="titem" onclick="quadratic()">ax<sup>2</sup>+bx+c</a>
+        a: <span id="ArangeValue">0</span>
+        <input type="range" name="a" id="a" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('ArangeValue','a')">
+        b: <span id="BrangeValue">0</span>
+        <input type="range" name="b" id="b" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('BrangeValue','b')">
+        c: <span id="CrangeValue">0</span>
+        <input type="range" name="c" id="c" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('CrangeValue','c')">
+    </div>
+    </div>
+
+</div>
+<canvas id="graph"></canvas>
 </div>
 
 </body>

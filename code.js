@@ -8,45 +8,69 @@ function trignometric(f) {
     var equationInput = f
     console.log(f)
     var equation = "Math."+equationInput;
-    // var r=document.getElementById("pre");
-    // var n= r.value;
     for (var x = -3.14; x <= 3.14; x += 0.1) {
         var y = eval(equation);
+        x=Math.round(x*100)/100
+        y=Math.round(y*100)/100
+        console.log(y)
         xlist.push(x);
         ylist.push(y);
     }
-
-    // pi=Math.PI
-    // r=[0,pi/6,pi/4,pi/3,80*pi/180]
-    // for (var x in r){
-    //     var y=eval(equation);
-    //     console.log("this is y")
-    //     console.log(y)
-    //     xlist.push(x);
-    //     ylist.push(y);}
-    // console.log(ylist)
-    data=[{x:xlist,y:ylist,mode:"line"}];
-    layout={title:"MARVS"};
-    Plotly.newPlot("graph",data,layout);
+    new Chart("graph", {
+        type: "line",
+        data: {
+          labels: xlist,
+          datasets: [{
+            fill: false,
+            pointRadius: 2,
+            borderColor: "rgba(0,0,255,0.5)",
+            data: ylist
+          }]
+        },    
+        options: {
+          legend: {display: false},
+          title: {
+            display: true,
+            text: "y = "+f,
+            fontSize: 16
+          }
+        }
+      });
     xlist=[];
-    ylist=[];1
+    ylist=[];
 }
-function inverse(){
-    var eqinput='sin(x)'
+function inverse(f){
+    var eqinput=f
     var equation = "Math."+eqinput;
-    // var r=document.getElementById("pre");
-    var n=r.value;
-    // for (var x=0;x<=n;x+=0.1){
-    //     var y=eval(equation);
-    //     var t=1/y
-    //     xlist.push(x);
-    //     ylist.push(t);
-    // }
-   
+    for (var x=-3.14;x<=3.14;x+=0.1){
+        var y=eval(equation);
+        var t=1/y
+        x=Math.round(x*100)/100
+        t=Math.round(t*100)/100
+        xlist.push(x);
+        ylist.push(t);
+    }
     console.log(xlist,ylist)
-    data=[{x:xlist,y:ylist,mode:"line"}];
-    layout={title:"sam"};
-    Plotly.newPlot("ss",data,layout);
+    new Chart("graph", {
+      type: "line",
+      data: {
+        labels: xlist,
+        datasets: [{
+          fill: false,
+          pointRadius: 2,
+          borderColor: "rgba(0,0,255,0.5)",
+          data: ylist
+        }]
+      },    
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "y = "+f,
+          fontSize: 16
+        }
+      }
+    });
     xlist=[];
     ylist=[];
 }
@@ -59,62 +83,89 @@ function linear(){
         m=String(m)
         c=String(c)
     equation=m+equation+c
-
     for (var x=-1;x<=1;x+=0.1){
         var y=eval(equation);
+        x=Math.round(x*100)/100
         xlist.push(x);
         ylist.push(y);
     }
     console.log(xlist,ylist)
-
-    // new Chart("myChart", {
-    //     type: "line",
-    //     data: {
-    //       labels: xlist,
-    //       datasets: [{
-    //         data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
-    //         borderColor: "red",
-    //         fill: false
-    //       }]},
-    //       options: {
-    //         legend: {display: false}
-    //       }})
-
-    data=[{x:xlist,y:ylist,mode:"line"}];
-    layout={title:"mayur",
-    yaxis: {
-      autotick: false
-    }};
-    Plotly.newPlot("graph",data,layout);
+    new Chart("graph", {
+      type: "line",
+      data: {
+        labels: xlist,
+        datasets: [{
+          fill: false,
+          pointRadius: 2,
+          borderColor: "rgba(0,0,255,0.5)",
+          data: ylist
+        }]
+      },    
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "y = Linear",
+          fontSize: 16
+        }
+      }
+    });
     xlist=[];
     ylist=[];
 }
 function quadratic(){
-    var equation="x*x+4*x+3"
-    // var r=document.getElementById("pre");
-    // var n=r.value;
-   
-    
+    var a=document.getElementById("a");
+    a=a.value;
+    var b=document.getElementById("b");
+    b=b.value;
+    var c=document.getElementById("c");
+    c=c.value;
+    a=String(a)
+    b=String(b)
+    c=String(c)
+    var equation=a+"*x*x+"+b+"*x+"+c
     for (var x=-10;x<=10;x+=0.1){
         var y=eval(equation);
-
+        x=Math.round(x*100)/100
         xlist.push(x);
         ylist.push(y);
     }
-    console.log(xlist,ylist)
-    data=[{x:xlist,y:ylist,mode:"line"}];
-    layout={title:"mayur"};
-    Plotly.newPlot("graph",data,layout);
+    new Chart("graph", {
+      type: "line",
+      data: {
+        labels: xlist,
+        datasets: [{
+          fill: false,
+          pointRadius: 2,
+          borderColor: "rgba(0,0,255,0.5)",
+          data: ylist
+        }]
+      },    
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "y = Quadratic",
+          fontSize: 16
+        }
+      }
+    });
+
     xlist=[];
     ylist=[];
 }
-function show(i){
+function show(i,n){
     a=document.getElementById(i).getAttribute("style")
-    console.log(a)
-    if (a=="display:block"){
+    if (a=="display:flex"){
         document.getElementById(i).setAttribute("style","display:none")
     }
     else
     {
-    document.getElementById(i).setAttribute("style","display:block")
+    document.getElementById(i).setAttribute("style","display:flex")
     }}
+
+function rv(i,r,){
+    a=document.getElementById(r);
+    b=a.value;
+    document.getElementById(i).innerHTML=b;
+}
