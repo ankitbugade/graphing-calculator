@@ -4,12 +4,14 @@ body{background-color: #111;}
     color: #5FF;
     padding: 1rem ;
     max-width: 600px;
-    margin: auto;
-    text-align: center;
+    
+    text-align:left;
 }
 
 header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;} 
+    border-bottom-right-radius: 1rem;
+    padding: 1rem 0rem;
+  } 
 
 .image{
     height: 100px;
@@ -20,9 +22,10 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     border: #5FF;
     box-shadow: 0 0 20px #5ff;
     border-style: solid;
+    margin-inline-start: 550px;
 }
 
-#main{display: flex;flex-direction: row;color: #5ff;}
+#main{display: flex;flex-direction: row;color: #5ff;margin-inline-start: 200px;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
 
 #main>div{margin-left: 15%;cursor:pointer;}
