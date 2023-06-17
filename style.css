@@ -4,7 +4,9 @@ body{background-color: #111;}
     color: #5FF;
     padding: 1rem ;
     max-width: 600px;
-  
+    margin-left: 0%;
+    font-weight: bolder;
+    font-size: xxx-large;
 }
 
 .head{margin: auto;}
@@ -23,6 +25,7 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     box-shadow: 0 0 20px #5ff;
     border-style: solid;
     margin: auto;
+    margin-right: 0px;
 }
 
 #main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;}
