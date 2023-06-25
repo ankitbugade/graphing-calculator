@@ -6,19 +6,20 @@ body{background-color: #111;}
     max-width: 600px;
     margin-left: 0%;
     font-weight: bolder;
-    font-size: xxx-large;
+    font-size: 6vh;
 }
 
 .head{margin: auto;}
 
 header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    padding: 1rem 0rem;
+    padding: 0.3rem 0rem;
+    
   } 
 
 .image{
-    height: 100px;
-    width: 100px;
+    height: 9vh;
+    width: 9vh;
     display: block;
     border-radius: 50%;
     border: #5FF;
@@ -28,13 +29,12 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     margin-right: 0px;
 }
 
-#main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;}
+#main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
 
 #main>div{margin-left: 15%;cursor:pointer;}
 
-.titem{text-decoration: none;color: #5FF;}
-
+.titem{text-decoration: none;color: #5FF;font-size: 3vh;}
 
 #rangeValue {
     position: relative;
@@ -45,24 +45,24 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     font-weight: 400;
   }
   .range {
-    width: 100px;
-    height: 15px;
+    width: 30vh;
+    height: 2vh;
     -webkit-appearance: none;
-    background: #111;
+    background: rgb(136, 181, 218);
     outline: none;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 5px rgb(4, 38, 38);
   }
   .range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #555;
+    background: rgb(158, 199, 242);
     cursor: pointer;
     border: 4px solid #555;
-    box-shadow: -407px 0 0 400px #151430;
+    box-shadow: -407px 0 0 400px rgb(5, 13, 54);
   }
 
   
