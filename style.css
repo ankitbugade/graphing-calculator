@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
 body{background-color: #111;}
 
 #titlee{
@@ -5,15 +7,15 @@ body{background-color: #111;}
     padding: 1rem ;
     max-width: 600px;
     margin-left: 0%;
-    font-weight: bolder;
     font-size: 6vh;
+    font-family: 'Lato', sans-serif;
 }
 
 .head{margin: auto;}
 
 header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    padding: 0.3rem 0rem;
+    padding: 1rem;
     
   } 
 
@@ -34,7 +36,9 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
 
 #main>div{margin-left: 15%;cursor:pointer;}
 
-.titem{text-decoration: none;color: #5FF;font-size: 3vh;}
+.titem{text-decoration: none;color: #5FF;font-size: 3vh;       font-family: 'Lato', sans-serif;
+
+}
 
 #rangeValue {
     position: relative;
