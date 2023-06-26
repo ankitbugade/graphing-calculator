@@ -6,6 +6,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="code.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/png"/>
 </head>
 <body>
     <header>
@@ -23,6 +24,7 @@
         <a href="#" class="titem" onclick="inverse('sin(x)')">cosec(x)</a>
         <a href="#" class="titem" onclick="inverse('cos(x)')">sec(x)</a>
         <a href="#" class="titem" onclick="inverse('tan(x)')">cot(x)</a>
+        <hr color="#5ff" size="10" width="100%">
     </div>
     </div>
     </div>
@@ -32,9 +34,10 @@
     <div class="linearlist" style="display: none;" id="linearfun">
         <b onclick="linear()" class="titem" >y=mx+c</b>
         m: <span id="MrangeValue" class="titem ">0</span>
-        <input type="range" name="mr" id="m" min="-10" max="10" step="0.1" onclick="linear()" class="range" onchange="rv('MrangeValue','m')">
+        <input type="range" name="mr" id="m" min="-10" max="10" step="0.1"  class="range" onchange="rv('MrangeValue','m'),linear()">
         c: <span id="CcrangeValue" class="titem ">0</span>
-        <input type="range" name="cr" id="cc" min="-10" max="10" class="range" onclick="linear()" onchange="rv('CcrangeValue','cc')">
+        <input type="range" name="cr" id="cc" min="-10" max="10" class="range"  onchange="rv('CcrangeValue','cc'),linear()">
+        <hr color="#5ff" size="10" width="100%">
     </div>
     </div>
     <div>
@@ -42,11 +45,12 @@
     <div class="quadraticlist" style="display: none;" id="quadfun">
         <a href="#" class="titem" onclick="quadratic()">ax<sup>2</sup>+bx+c</a>
         a: <span id="ArangeValue" class="titem ">0</span>
-        <input type="range" name="a" id="a" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('ArangeValue','a')">
+        <input type="range" name="a" id="a" min="-10" max="10" class="range" onchange="rv('ArangeValue','a'),quadratic()">
         b: <span id="BrangeValue" class="titem ">0</span>
-        <input type="range" name="b" id="b" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('BrangeValue','b')">
+        <input type="range" name="b" id="b" min="-10" max="10" class="range" onchange="rv('BrangeValue','b'),quadratic()">
         c: <span id="CrangeValue" class="titem ">0</span>
-        <input type="range" name="c" id="c" onclick="quadratic()" min="-10" max="10" class="range" onchange="rv('CrangeValue','c')">
+        <input type="range" name="c" id="c" min="-10" max="10" class="range" onchange="rv('CrangeValue','c'),quadratic()">
+        <hr color="#5ff" size="10" width="100%">
     </div>
     </div>
 

@@ -6,7 +6,7 @@ body{background-color: #111;}
     max-width: 600px;
     margin-left: 0%;
     font-weight: bolder;
-    font-size: 6vh;
+    font-size: 7vh;
 }
 
 .head{margin: auto;}
@@ -14,8 +14,10 @@ body{background-color: #111;}
 header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 0.3rem 0rem;
-    
+    background-image: linear-gradient(to top,rgb(2 44 44),rgb(0 0 0));
   } 
+
+.titem:hover {background-color: rgb(2 44 44);color: #b4ffff;}
 
 .image{
     height: 9vh;
@@ -29,12 +31,14 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     margin-right: 0px;
 }
 
+hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
+
 #main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
 
 #main>div{margin-left: 15%;cursor:pointer;}
 
-.titem{text-decoration: none;color: #5FF;font-size: 3vh;}
+.titem{text-decoration: none;color: #5FF;font-size: 4vh;margin: 1vh;}
 
 #rangeValue {
     position: relative;
