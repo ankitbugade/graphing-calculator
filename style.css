@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
 body{background-color: #111;}
 #titlee{
     color: #5FF;
@@ -6,6 +7,7 @@ body{background-color: #111;}
     margin-left: 0%;
     font-weight: bolder;
     font-size: 7vh;
+    font-family: 'Lato', sans-serif;
 }
 .head{margin: auto;}
 header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
@@ -18,10 +20,8 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
 .titem:hover {background-color: rgb(2 44 44);color: #b4ffff;}
 
 
-a:hover {background-color: rgb(2 44 44);color: #b4ffff;}
-b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
- main
-.image{
+
+#image{
     height: 9vh;
     width: 9vh;
     display: block;
@@ -32,16 +32,24 @@ b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
     margin: auto;
     margin-right: 0px;
 }
+a:hover {background-color: rgb(2 44 44);color: #b4ffff;}
+b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
+ main
+
  Responsive-design
 
 hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
 
+#main{
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
 
-hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
+hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;margin-inline-start: 0px;margin-block-start: 0em;}
  main
 #main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
-#main>div{margin-left: 15%;cursor:pointer;}
+#main>div{margin-left: 5%;cursor:pointer;}
  Responsive-design
 
 .titem{text-decoration: none;color: #5FF;font-size: 4vh;margin: 1vh;}
