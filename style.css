@@ -13,8 +13,14 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     padding: 0.3rem 0rem;
     background-image: linear-gradient(to top,rgb(2 44 44),rgb(0 0 0));
   } 
+ Responsive-design
+
+.titem:hover {background-color: rgb(2 44 44);color: #b4ffff;}
+
+
 a:hover {background-color: rgb(2 44 44);color: #b4ffff;}
 b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
+ main
 .image{
     height: 9vh;
     width: 9vh;
@@ -26,11 +32,23 @@ b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
     margin: auto;
     margin-right: 0px;
 }
+ Responsive-design
+
 hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
+
+
+hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
+ main
 #main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
 #main>div{margin-left: 15%;cursor:pointer;}
+ Responsive-design
+
 .titem{text-decoration: none;color: #5FF;font-size: 4vh;margin: 1vh;}
+
+
+.titem{text-decoration: none;color: #5FF;font-size: 4vh;margin: 1vh;}
+main
 #rangeValue {
     position: relative;
     display: block;
