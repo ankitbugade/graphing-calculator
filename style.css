@@ -15,12 +15,8 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
     padding: 0.3rem 0rem;
     background-image: linear-gradient(to top,rgb(2 44 44),rgb(0 0 0));
   } 
- Responsive-design
 
 .titem:hover {background-color: rgb(2 44 44);color: #b4ffff;}
-
-
-
 #image{
     height: 9vh;
     width: 9vh;
@@ -34,9 +30,7 @@ header{background-color: #222;display: flex;border-bottom-left-radius: 1rem;
 }
 a:hover {background-color: rgb(2 44 44);color: #b4ffff;}
 b:hover {background-color: rgb(2 44 44);color: #b4ffff;}
- main
 
- Responsive-design
 
 hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
 
@@ -46,8 +40,8 @@ hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;}
 }
 
 hr{list-style:circle;margin: 0%;margin-bottom: 2vh;margin-top: 1vh;margin-inline-start: 0px;margin-block-start: 0em;}
- main
-#main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;}
+#main{display: flex;flex-direction: row;color: #5ff;margin-inline-start:auto;flex-wrap: wrap;font-family: 'Lato', sans-serif;
+  font-style: italic;}
 .trigolist,.linearlist,.quadraticlist{display: none;flex-direction: column;}
 #main>div{margin-left: 5%;cursor:pointer;}
  Responsive-design
