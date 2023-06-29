@@ -30,7 +30,7 @@
     </div>
     <div>
     <b class="linear titem" onclick="show('linearfun')">Linear</b>
-    <div class="linearlist titem" style="display: none;" id="linearfun">
+    <div class="linearlist" style="display: none;" id="linearfun">
         <b onclick="linear()" class="titem" >y=mx+c</b>
         m: <span id="MrangeValue" class="titem">0</span>
         <input type="range" name="mr" id="m" min="-10" max="10" step="0.1"  class="range" onchange="rv('MrangeValue','m'),linear()">
@@ -41,7 +41,7 @@
     </div>
     <div>
     <b class="Quadratic titem" onclick="show('quadfun')" >Quadratic</b>
-    <div class="quadraticlist titem" style="display: none;" id="quadfun">
+    <div class="quadraticlist" style="display: none;" id="quadfun">
         <a href="#" class="titem" onclick="quadratic()">ax<sup>2</sup>+bx+c</a>
         a: <span id="ArangeValue" class="titem">0</span>
         <input type="range" name="a" id="a" min="-10" max="10" class="range" onchange="rv('ArangeValue','a'),quadratic()">

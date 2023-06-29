@@ -23,7 +23,7 @@ function trignometric(f) {
           datasets: [{
             fill: false,
             pointRadius: 2,
-            borderColor: "rgba(0,0,255,0.5)",
+            borderColor: "#cffafe",
             data: ylist
           }]
         },    
@@ -58,7 +58,7 @@ function inverse(f){
         datasets: [{
           fill: false,
           pointRadius: 2,
-          borderColor: "rgba(0,0,255,0.5)",
+          borderColor: "#cffafe",
           data: ylist
         }]
       },    
@@ -97,7 +97,7 @@ function linear(){
         datasets: [{
           fill: false,
           pointRadius: 2,
-          borderColor: "rgba(0,0,255,0.5)",
+          borderColor: "#cffafe",
           data: ylist
         }]
       },    
@@ -137,7 +137,7 @@ function quadratic(){
         datasets: [{
           fill: false,
           pointRadius: 2,
-          borderColor: "rgba(0,0,255,0.5)",
+          borderColor: "#cffafe",
           data: ylist
         }]
       },    
